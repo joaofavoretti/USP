@@ -1,0 +1,40 @@
+Atividade 1
+===========
+
+João Pedro Favoretti
+11316055
+===========
+
+1) Na sua concepção, qual a importância dos Sistemas Operacionais?
+Imagino que essa questão seja relacionada com a questão de abstrações na computação.
+Não podemos lidar com algum problema de programação orientada a objetos utilizando portas lógicas no computador, precisamos de varios níveis de abstração para que em um certo ponto, só nos preocupemos com a tarefa que estamos interessados.
+E essa é exatamente a importancia do Sistema Operacional, ele nos da um nivel de abstração para construir programas inteiros ou lidar com a integracao de diferentes dispositivos dentro de um único programa.
+
+2) O que você entende por Sistema Operacional?
+E pelo meu conhecimento, o Sistema Operacional é a camada de abstração entre a máquina e os programas que queremos executar. Ou seja, o Sistema Operacional faz a tradução dos bytes do programa que compilamos para o processador executar, gerencia buffer de E/S que recebe do teclado, etc.
+
+3) Para você Sistema Operacioal é o mesmo que Sistema Computacional?
+Para mim, um Sistema Computacional é qualquer conjunto de hardware e/ou software que faz uma tarefa específica, então "Sistema Operacional" seria um elemento do conjunto "Sistema Computacional". Por exemplo, dentro desse conjunto também estariam: circuitos integrados e programas de larga escala como o Office (feito pela Microsoft).
+
+4) O que é um processo?
+Um processo é o nome dado para um programa quando sua memória virtual ja foi alocada pelo sistema operacional e seus bytes de instrução ja começaram a ser executados pelo computador.
+
+5) Quais atividades são responsabilidade de um Sistema Operacional no seu ponto de vista?
+Gerenciar: a interface gráfica, memória, dispositivos conectados ao computador(E seus respectivos buffers), buffers de escrita/leitura em arquivos, modo de execução de diferentes arquivos (ELF por exemplo).
+
+6) Quais são os estados que um processo pode assumir?
+Não tenho muito conhecimento prévio sobre isso. Mas alguns dos estados podem ser: Quando as instruções estão sendo executadas, quando o processo está em espera por conta de alguma transferência de dados (vindo do teclado ou do disco) e quando o processo está sendo carregado na memória.
+
+7) O que é uma Thread?
+Uma thread é uma sequencia de instruções sendo lidadas pelo computador. Um sistema operacional pode gerenciar varias sequencias de instrucoes (de vários processos diferentes), porém somente uma thread pode ser executada por vez. Então o Sistema Operacional gerencia qual thread deve ser executada pela CPU em um determinado momento.
+
+8) Quais são as vantagens e desvantagens do uso de threads em relação ao uso de processos?
+Sempre entendi thread e processos como coisas separadas, porém imagino que nesse caso processo quer dizer: uma sequência de instruções que é executada do inicio ao fim pela CPU, enquanto a thread que a CPU está executando pode varias e então a CPU pode executar varias threads "Simultaneamente".
+Com isso, imagino que um processo seja executado mais rapidamente, já que possui todo o foco do processamento da CPU. Porém a utilizacao de threads pode ser superior quando temos alguma transferência de arquivos ou manipulação de dados externo ao processo, sendo que enquanto os dados são transmitidos para a memória, as instruções de outra thread é executada. O que agiliza a execução das instruções de modo geral.
+
+9) O que significa um processo sofre preempção?
+Significa que a execução das suas instruções foram interrompidas para serem executadas posteriormente.
+
+10) Qual a relação entre programa e processo?
+Um programa é um executavel armazenado em disco, com seus bytes prontos para serem carregados na memória e executados pelo processador. Um processo é um programa que foi inicializado, ou seja, carregado na memória principal e com seus bytes prontos para serem executados pelo processador.
+

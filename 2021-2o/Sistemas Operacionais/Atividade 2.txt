@@ -1,0 +1,14 @@
+
+Aula 23/08/2021
+===============
+
+Nome: João Pedro Favoretti
+N USP: 11316055
+===============
+
+Na sua opinião, qual foi a principal evolução de hardware e software que possibilitou o desenvolvimento dos Sistemas Operacionais que existem atualmente? Justifique sua resposta.
+
+Na minha opinião, a construção de mecanismos para gerenciar o processador(possibilidando time-sharing e multi-programação) deram o insight para a construção dos Sistemas Operacionais que temos hoje em dia.
+Voltando para os primeiros computadores, haviam somente maquinas que executavam instrucoes sequencialmente e essas instruções poderiam ser fornecida por humanos em tempo de execução. Quando surgiu a oportunidade de aumentar a velocidade dos processadores (Com o avanço do hardware) foi pensado em modos para que pudessemos manipular sequencias de instrucoes mais rapidamente, para aproveitar melhor o tempo do processador. E assim foram criados softwares para gerenciamento das instruções que são passadas para a CPU. E com o passar dos anos e com novas tecnologias, foram criados softwares para gerenciar não só a CPU, mas a rede ligada no computador, os dispositivos de E/S, a memória principal, a memória secundária, e outros componentes que são ligados ao hardware do computador. 
+E esses softwares de gerenciamento do hardware foram unidos no que chamamos de Sistema Operacional hoje, que foi criado porque o hardware exige um gerenciamento inalcançável por controladores humanos.
+
