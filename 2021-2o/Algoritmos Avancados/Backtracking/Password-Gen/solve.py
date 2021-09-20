@@ -44,7 +44,7 @@ for n in sys.stdin:
         r = input()
         rules.append(r)
     
+    print('--')
     for rule in rules:
-        print('--')
         backtracking(rule, words, 0, [])
 
