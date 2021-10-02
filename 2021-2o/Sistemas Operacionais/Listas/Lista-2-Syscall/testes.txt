@@ -1,0 +1,16 @@
+Referencias
+http://nickdesaulniers.github.io/blog/2018/10/24/booting-a-custom-linux-kernel-in-qemu-and-debugging-it-with-gdb/
+https://www.youtube.com/watch?v=2VcA5Wj7IvU
+
+# Tentando rodar o kernel compilado no qemu
+- qemu-system-x86_64 -kernel ./bzImage [ERRO: VFS: Unable to mount root fs on unknown-block]
+- qemu-system-x86_64 -kernel ./bzImage -nographic -append "console=ttyS0" [RODAR NO PROPRIO CONSOLE]
+    - Nao tem root file system
+    - Para criar: "mkinitramfs -o ramdisk.img"
+- qemu-system-x86_64 -kernel ./bzImage -nographic -append "console=ttyS0" -initrd ramdisk.img
+- qemu-system-x86_64 -kernel ./bzImage -nographic -append "console=ttyS0" -initrd ramdisk.img -m 512 -cpu host
+
+# syzkaller - fuzzer google que fornece alguns scripts que talvez precisemos
+
+-> O que precisamos pra rodar o kernel emulado. O kernel (bzImage) e um filesystem (syskaller create-image script) 
+

@@ -1,0 +1,17 @@
+# Lista implementacao syscall 
+
+Código de interrupcao: 0x80
+Registro de interrupcao: IVR (Interrupt Vector Register)
+Rotina system_call: arch/i386/kernel/syscall_table.S
+
+# Execucao com qemu
+- Ramdisk: sistema principal para executar funcionalidades basicas do sistema operacipnal
+
+
+# Compilacao do kernel
+- make defconfig
+- make kvmconfig
+- make olddefconfig
+- make -j8
+
+
